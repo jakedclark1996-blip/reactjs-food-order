@@ -19,7 +19,7 @@ function App() {
 
   return (
     <CartProvider>
-      {CartIsShown && <Cart onClose={hideCartHandler} />}
+      {cartIsShown && <Cart onClose={hideCartHandler} />}
       <Header onShowCart={showCartHandler} />
       <main>
         <Meals />
